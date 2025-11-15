@@ -1,12 +1,12 @@
 # X-WebUI
 
-A comprehensive setup script for deploying a secure server environment with Nginx, Docker, X, and Open WebUI.
+A comprehensive setup script for deploying a secure server environment with nginx, Docker, X proxy, and Open WebUI.
 
 ## Overview
 
 This repository contains a bash script that automates the setup of a complete server environment on a Debian system. The script sets up:
 
-- Nginx web server
+- nginx web server
 - SSL/TLS certificates via acme.sh
 - Docker and Docker Compose
 - Open WebUI (running in Docker)
@@ -38,7 +38,7 @@ Replace the following:
 
 - `<username>`: Your login username
 - `<domain>`: Your domain name (must be pointed to this server)
-- `<id>`: A unique ID for the X configuration
+- `<id>`: A unique ID for the X proxy configuration
 
 If you encounter the following error:
 
@@ -56,7 +56,7 @@ sudo apt update && sudo apt install -y curl bash
 
 ### Web Server
 
-- Configures Nginx
+- Configures nginx
 - Sets up automatic HTTPS redirection
 - Implements proper security headers
 
@@ -73,7 +73,7 @@ sudo apt update && sudo apt install -y curl bash
 
 ### Proxy Configuration
 
-- Installs and configures X
+- Installs and configures X proxy
 - Implements secure TLS settings
 - Configures proper routing rules
 
