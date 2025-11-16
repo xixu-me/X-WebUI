@@ -15,7 +15,7 @@ This repository contains a bash script that automates the setup of a complete se
 
 ## Requirements
 
-- Debian 10+ 64-bit system
+- Debian/Ubuntu 64-bit system
 - Sudo privileges
 - Domain name pointing to your server
 - Inbound traffic on TCP ports 80 and 443 from 0.0.0.0/0 allowed
